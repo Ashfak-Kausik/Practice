@@ -14,4 +14,3 @@ console.log(n4);
 
 n5 = names.slice();
 console.log(n5);
-
