@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-     <head>
-        <title>First Try</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-     </head>
-     <body>
-      <input id="myId" type="text"></input>
-      <button onClick="console.log(document.getElementById('myId').value)">Get Text</button>
-     </body>
+<head>
+    <title>Box Volume Calculator</title>
+</head>
+<body>
+    <h1>Box Volume Calculator</h1>
+
+    <script>
+        let width = prompt("Volume of the box, enter width", 0);
+        let height = prompt("Volume of the box, enter height", 0);
+        let length = prompt("Volume of the box, enter length", 0);
+        let volume = width * height * length;
+
+        console.log(`The volume of the box is ${volume}`);
+    </script>
+</body>
 </html>
