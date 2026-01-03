@@ -1,5 +1,11 @@
-let name = "Maxwell Wright";
-let phone = "(0191) 713 456";
-let email = "curabitur.egestas.nunc@nonummyac.co.uk";
+let numbers = [21, 45, 100, 12, 11, 78, 61, 4, 39, 22];
+let even = [];
 
-console.log(name + "/" + phone + "/" + email);
+for (let number of numbers) {
+    if (number % 2 === 0) {
+        even.push(number);
+    }
+}
+
+console.log("Even numbers:");
+console.log(even);

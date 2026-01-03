@@ -1,14 +1,28 @@
-var globalGreeting = "Good";
+let names = [];
+let isOver = false;
 
-function tesFunction() {
-    var localGreeting = "Morning";
-    console.log("Function:");
-    console.log(globalGreeting);
-    console.log(localGreeting);
+while (!isOver) {
+    let name = prompt("Enter a name or press cancel.");
+    if (name != null) {
+        names.push(name);
+    } else {
+        isOver = true;
+    }
 }
 
-tesFunction();
+for (let i = 0; i < names.length; i++) {
+    console.log(`Name ${i + 1}: ${names[i]}`);
+} 
 
-console.log("main program:");
-console.log(globalGreeting);
-console.log(localGreeting); // This will cause an error
+let numbers = [10, 20, 50, 100, 40, 90];
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+
+for (let i = numbers.length - 1; i--;) {
+    console.log(numbers[i]);
+}
+
+for (let i = 0; i < numbers.length; i+=2) {
+    console.log(numbers[i]);
+}
