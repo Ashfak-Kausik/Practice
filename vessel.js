@@ -10,3 +10,5 @@ let vessel = {
 for (let key in vessel) {
     console.log(`${key} -> ${vessel[key]}`);
 }
+
+let name = test ?
