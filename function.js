@@ -1,11 +1,4 @@
-let inner = function() {
-console.log('inner 1');
-}
-let outer = function(callback) {
-console.log('outer 1');
-setTimeout(callback, 1000) /*ms*/;
-console.log('outer 2');
-}
-console.log('test 1');
-outer(inner);
-console.log('test 2');
+let numbers = [1, 10, 2, 20, 30, 3, 5, 4, 40, 50];
+
+console.log(numbers.sort((a, b) => a - b));
+console.log(numbers.sort((a, b) => b - a));
